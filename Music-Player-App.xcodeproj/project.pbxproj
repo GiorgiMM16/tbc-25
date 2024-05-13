@@ -10,9 +10,10 @@
 		CB36287F2BF22E2F00123FAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36287E2BF22E2F00123FAD /* AppDelegate.swift */; };
 		CB3628812BF22E2F00123FAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3628802BF22E2F00123FAD /* SceneDelegate.swift */; };
 		CB3628832BF22E2F00123FAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3628822BF22E2F00123FAD /* ViewController.swift */; };
-		CB3628862BF22E2F00123FAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3628842BF22E2F00123FAD /* Main.storyboard */; };
 		CB3628882BF22E3000123FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3628872BF22E3000123FAD /* Assets.xcassets */; };
 		CB36288B2BF22E3000123FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3628892BF22E3000123FAD /* LaunchScreen.storyboard */; };
+		CB3628942BF246DD00123FAD /* Nunito-Variable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB3628932BF246DD00123FAD /* Nunito-Variable.ttf */; };
+		CB3628962BF2499300123FAD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3628952BF2499300123FAD /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		CB36287E2BF22E2F00123FAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB3628802BF22E2F00123FAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CB3628822BF22E2F00123FAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB3628852BF22E2F00123FAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB3628872BF22E3000123FAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB36288A2BF22E3000123FAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB36288C2BF22E3000123FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3628932BF246DD00123FAD /* Nunito-Variable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Variable.ttf"; sourceTree = "<group>"; };
+		CB3628952BF2499300123FAD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		CB36287D2BF22E2F00123FAD /* Music-Player-App */ = {
 			isa = PBXGroup;
 			children = (
-				CB36287E2BF22E2F00123FAD /* AppDelegate.swift */,
-				CB3628802BF22E2F00123FAD /* SceneDelegate.swift */,
+				CB3628922BF22ECE00123FAD /* Supporting */,
 				CB3628822BF22E2F00123FAD /* ViewController.swift */,
-				CB3628842BF22E2F00123FAD /* Main.storyboard */,
-				CB3628872BF22E3000123FAD /* Assets.xcassets */,
-				CB3628892BF22E3000123FAD /* LaunchScreen.storyboard */,
 				CB36288C2BF22E3000123FAD /* Info.plist */,
+				CB3628932BF246DD00123FAD /* Nunito-Variable.ttf */,
 			);
 			path = "Music-Player-App";
+			sourceTree = "<group>";
+		};
+		CB3628922BF22ECE00123FAD /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				CB36287E2BF22E2F00123FAD /* AppDelegate.swift */,
+				CB3628892BF22E3000123FAD /* LaunchScreen.storyboard */,
+				CB3628802BF22E2F00123FAD /* SceneDelegate.swift */,
+				CB3628872BF22E3000123FAD /* Assets.xcassets */,
+				CB3628952BF2499300123FAD /* Fonts.swift */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB36288B2BF22E3000123FAD /* LaunchScreen.storyboard in Resources */,
+				CB3628942BF246DD00123FAD /* Nunito-Variable.ttf in Resources */,
 				CB3628882BF22E3000123FAD /* Assets.xcassets in Resources */,
-				CB3628862BF22E2F00123FAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3628962BF2499300123FAD /* Fonts.swift in Sources */,
 				CB3628832BF22E2F00123FAD /* ViewController.swift in Sources */,
 				CB36287F2BF22E2F00123FAD /* AppDelegate.swift in Sources */,
 				CB3628812BF22E2F00123FAD /* SceneDelegate.swift in Sources */,
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB3628842BF22E2F00123FAD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB3628852BF22E2F00123FAD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB3628892BF22E3000123FAD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +300,6 @@
 				INFOPLIST_FILE = "Music-Player-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +326,6 @@
 				INFOPLIST_FILE = "Music-Player-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
